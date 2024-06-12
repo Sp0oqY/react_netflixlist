@@ -1,0 +1,32 @@
+header{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+  }
+  
+  .nav li{
+    padding: 10px;
+  }
+  
+  .nav li a{
+    color: rgb(255, 136, 0);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
+  .nav li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.7s;
+    transform: scale(1.5);
+  }
+  
