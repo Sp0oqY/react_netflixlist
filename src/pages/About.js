@@ -1,8 +1,7 @@
-
 export default function Home() {
     return (
         <div>
-            <h1> Welcome to the home page of Netflix list :)</h1>
+            <h1> About</h1>
         </div>
     );
 }
