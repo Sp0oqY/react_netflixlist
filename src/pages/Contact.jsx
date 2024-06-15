@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react'
 //import emailjs from '@emailjs/browser';
 
 import '../css/Contact.css';
@@ -58,9 +58,9 @@ export const Contact = () => {
             <li>Botanická 68A, 602 00 <br /> Královo Pole-Ponava, Brno</li>
           </ul>
 
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100008982675113"><img className="net fb" src="https://image.similarpng.com/very-thumbnail/2020/04/Beautiful-Facebook-logo-icon-social-media-png.png" alt="" /></a>
-          <a target="_blank" href="https://www.instagram.com/miroslavkastier/?hl=sk"><img className="net ig" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" alt="" /></a>
-          <a target="_blank" href=""><img className="net" src="https://toppng.com/uploads/preview/twitter-icon-logo-social-media-icon-png-and-vector-twitter-logo-pink-115629344286kzjqw2mow.png" alt="" /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100008982675113"><img className="net fb" src="https://image.similarpng.com/very-thumbnail/2020/04/Beautiful-Facebook-logo-icon-social-media-png.png" alt="" /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/miroslavkastier/?hl=sk"><img className="net ig" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png" alt="" /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/miroslav-ka%C5%A1tier-788a92310/"><img className="net" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png" alt="" /></a>
 
         </div>
       </div>

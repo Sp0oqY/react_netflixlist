@@ -1,4 +1,4 @@
-header {
+/* header {
     margin: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -19,8 +19,7 @@ header {
 }
 
 .nav li a {
-    /* color: rgb(218, 17, 17); */
-    color: linear-gradient(blue, red);
+    color: rgb(218, 17, 17);
     text-decoration: none;
     font-weight: bold;
     transition: 0.7s;
@@ -70,4 +69,151 @@ button.SignUp:hover, button.Login:hover {
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     letter-spacing: 2px;
     margin: 5px 0 0 0;
+} */
+
+body{
+    height: 100vh;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/622/739/588/stranger-things-netflix-clouds-bicycle-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: red;
+}
+
+/*Header*/
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 28px;
+    color: red;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    letter-spacing: 2px;
+    margin: 5px 0 0 0;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    /* background-color: red;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease; */
+
+    color: white;
+    background-color: rgb(97, 0, 0);
+    border: none;
+    margin: 5px 10px 5px 10px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    background: linear-gradient(blue, red);
+
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 0.5rem;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/*Dropdown menu*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsive design*/
+@media(max-width: 992px){
+    .navbar .links, 
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
 }

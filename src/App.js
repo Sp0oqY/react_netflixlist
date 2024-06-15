@@ -17,8 +17,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
+        
         <BrowserRouter>
-          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
@@ -28,8 +29,9 @@ class App extends Component {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
-          <Footer />
         </BrowserRouter>
+
+        <Footer />
       </div>
     )
   }
