@@ -148,10 +148,7 @@ header{
     border-radius: 5px;
     background: linear-gradient(blue, red);
 
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    gap: 0.5rem;
+
 }
 
 .action_btn:hover{
