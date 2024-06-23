@@ -10,49 +10,28 @@ link.referrerPolicy = 'no-referrer';
 document.head.appendChild(link);
 
 /*Dropdown Menu*/
-// const toggleBtn = document.querySelector('.toggle_btn')
-// const toggleBtnIcon = document.querySelector('.toggle_btn i')
-// const dropdownmenu = document.querySelector('.dropdown_menu')
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropdownmenu = document.querySelector('.dropdown_menu');
 
-// toggleBtn.onclick = function () {
-//     dropdownmenu.classList.toggle('open')
-//     const isOpen = dropdownmenu.classList.contains('open')
+    if (toggleBtn && toggleBtnIcon && dropdownmenu) {
+        toggleBtn.onclick = function () {
+            dropdownmenu.classList.toggle('open');
+            const isOpen = dropdownmenu.classList.contains('open');
 
-//     toggleBtnIcon.classList = isOpen
-//         ? 'fa-solid fa-xmark'
-//         : 'fa-solid fa-bars'
-// }
+            toggleBtnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
+        };
+    } else {
+        console.error('One or more elements are not found');
+    }
+});
 
 export default function Header() {
     return (
         <header>
-            {/* <div className='title'>
-                <h2>My Netflix List</h2>
-            </div>
-            <ul className="nav">
-                <li><a href="http://localhost:3001/home">Home</a></li>
-                <li><a href="http://localhost:3001/about">About</a></li>
-                <li><a href="http://localhost:3001/list">List</a></li>
-                <li><a href="http://localhost:3001/profile">Profile</a></li>
-                <li><a href="http://localhost:3001/support">Support</a></li>
-                <li><a href="http://localhost:3001/contact">Contact</a></li>
-            </ul>
-
-            <div class="buttons">
-                <a href="/rocnikovy/login"><button class="Login">Login</button></a>
-                <a href="/rocnikovy/signup"><button class="SignUp">Sign Up</button></a>
-
-                <div class="dropdown">
-                    <a class="settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="https://freesvg.org/storage/img/thumb/gearRed.png" alt="" />
-                    </a>
-
-                    <div class="dropdown-menu dropdown-menu-right mt-10" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="/rocnikovy/settings">Data changing</a>
-                    </div>
-                </div>
-            </div> */}
-
             <div className="navbar">
                 <div className="logo"><a href="http://localhost:3001/home">My Netflix List</a></div>
                 <ul className="links">
@@ -75,8 +54,8 @@ export default function Header() {
                 <li><a href="http://localhost:3001/profile">Profile</a></li>
                 <li><a href="http://localhost:3001/support">Support</a></li>
                 <li><a href="http://localhost:3001/contact">Contact</a></li>
-                <a href="http://localhost:3001/login" className="action_btn">Login</a>
-                <a href="http://localhost:3001/login" className="action_btn">Sign Up</a>
+                <li><a href="http://localhost:3001/login" className="action_btn">Login</a></li>
+                <li><a href="http://localhost:3001/login" className="action_btn">Sign Up</a></li>
             </div>
         </header>
     )
