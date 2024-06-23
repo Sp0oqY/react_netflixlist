@@ -10,6 +10,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+main{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -41,12 +48,13 @@ body {
   box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
 }
 
-.left, .right{
+.left,
+.right {
   height: 100%;
   padding: 25px 40px;
 }
 
-.left p{
+.left p {
   display: flex;
   justify-content: left;
   font-weight: bold;
@@ -67,12 +75,13 @@ h2:after {
   height: 4px;
   width: 70px;
   border-radius: 2px;
-  background-color: red;
+  background: linear-gradient(135deg, blue, red);
 }
 
 .field {
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
   outline: none;
   background-color: rgba(230, 230, 230, 0.6);
   padding: 0.5rem 1rem;
@@ -94,45 +103,56 @@ h2:after {
   min-height: 150px;
 }
 
-.btn {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  background-color: red;
-  color: #fff;
-  font-size: 1.1rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.btn:hover {
-  background-color: #27ae60;
-}
-
 .right ul {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .right li {
-    margin-top: 20px;
-    font-size: 17px;
-    list-style: none;
+  margin-top: 20px;
+  font-size: 17px;
+  list-style: none;
 }
 
-.network{
+.network {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.network a img{
+.network a img {
   height: 60px;
   width: 60px;
   margin-top: 60px;
   border-radius: 12px;
   box-shadow: #000000 0px 0px 10px 0px;
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  grid-column: span 2;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, blue, red);
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .7s;
+}
+
+.btn:hover {
+  scale: 1.05;
+  color: #fff;
 }
 
 @media screen and (max-width: 880px) {
@@ -143,7 +163,8 @@ h2:after {
   .right {
     height: 100%;
   }
-  .network{
+
+  .network {
     max-width: 70%;
   }
 }
