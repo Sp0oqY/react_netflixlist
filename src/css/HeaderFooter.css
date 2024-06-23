@@ -1,79 +1,6 @@
-/* header {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 8px;
-    margin: 0;
-}
-
-.nav li {
-    padding: 10px;
-}
-
-.nav li a {
-    color: rgb(218, 17, 17);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.7s;
-    letter-spacing: 0.5px;
-}
-
-.nav li a:hover {
-    color: rgb(255, 255, 255);
-    transition: 0.7s;
-    transform: scale(1.5);
-}
-
-.buttons {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-button.SignUp, button.Login {
-    color: white;
-    background-color: rgb(97, 0, 0);
-    border: none;
-    margin: 5px 10px 5px 10px;
-    padding: 5px 15px 5px 15px;
-    border-radius: 5px;
-    background: linear-gradient(blue, red);
-}
-
-button.SignUp:hover, button.Login:hover {
-    transform: scale(1.3);
-    transition: 1s;
-    cursor: pointer;
-}
-
-.title
-{
-    margin: 0;
-    text-align: center;
-    display: flex;
-    justify-content: left;
-}
-
-.title h2
-{
-    font-size: 28px;
-    color: red;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    letter-spacing: 2px;
-    margin: 5px 0 0 0;
-} */
-
 body{
     height: 100vh;
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/622/739/588/stranger-things-netflix-clouds-bicycle-wallpaper-preview.jpg");
+    background-image: url("https://user-images.githubusercontent.com/16425113/129554147-6ac7ba51-43e7-4c8e-ba77-e646a3ef6b12.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -129,17 +56,6 @@ header{
 }
 
 .action_btn{
-    /* background-color: red;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale 0.2 ease; */
-
     color: white;
     background-color: rgb(97, 0, 0);
     border: none;
