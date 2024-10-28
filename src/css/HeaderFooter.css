@@ -1,6 +1,7 @@
 body{
     height: 100vh;
-    background-image: url("https://user-images.githubusercontent.com/16425113/129554147-6ac7ba51-43e7-4c8e-ba77-e646a3ef6b12.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.75)),url("https://user-images.githubusercontent.com/16425113/129554147-6ac7ba51-43e7-4c8e-ba77-e646a3ef6b12.jpg");
+    /* background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.75)),url(https://wallpaperaccess.com/full/1132043.jpg); */
     background-size: cover;
     background-position: center;
 }

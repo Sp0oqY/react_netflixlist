@@ -36,27 +36,27 @@ export default function Header() {
                 <div className="logo"><a href="/home">My Netflix List</a></div>
                 <ul className="links">
                     <li><a href="/about">About</a></li>
-                    <li><a href="http://localhost:3001/list">List</a></li>
-                    <li><a href="http://localhost:3001/profile">Profile</a></li>
+                    <li><a href="/list">List</a></li>
+                    <li><a href="/profile">Profile</a></li>
                     <li><a href="/support">Support</a></li>
-                    <li><a href="http://localhost:3001/contact">Contact</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
 
-                <a href="http://localhost:3001/login" className="action_btn">Login</a>
-                <a href="http://localhost:3001/login" className="action_btn">Sign Up</a>
+                <a href="/login" className="action_btn">Login</a>
+                <a href="/login" className="action_btn">Sign Up</a>
                 <div className="toggle_btn">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
 
             <div className="dropdown_menu">
-                <li><a href="http://localhost:3001/about">About</a></li>
-                <li><a href="http://localhost:3001/list">List</a></li>
-                <li><a href="http://localhost:3001/profile">Profile</a></li>
-                <li><a href="http://localhost:3001/support">Support</a></li>
-                <li><a href="http://localhost:3001/contact">Contact</a></li>
-                <li><a href="http://localhost:3001/login" className="action_btn">Login</a></li>
-                <li><a href="http://localhost:3001/login" className="action_btn">Sign Up</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/list">List</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/support">Support</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/login" className="action_btn">Login</a></li>
+                <li><a href="/login" className="action_btn">Sign Up</a></li>
             </div>
         </header>
     )
